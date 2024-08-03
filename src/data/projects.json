@@ -1,0 +1,194 @@
+{
+    "projects" : [
+        {
+            "name" : "overshot - my capstone",
+            "type" : "capstone",
+            "clients" : [
+                "ariel recto",
+                "avrill monticalvo",
+                "jenefer morabor"
+            ],
+            "description" : "",
+            "images" : [
+                "/myportfolio/overshot/0.png"
+            ],
+            "stacks" : [
+                {
+                    "name" : "laravel",
+                    "icon" : "/myportfolio/laravel.png"
+                },
+                {
+                    "name" : "vue js",
+                    "icon" : "/myportfolio/vue.png"
+                },
+                {
+                    "name" : "tailwindcss",
+                    "icon" : "/myportfolio/Tailwind.png"
+                },
+                {
+                    "name" : "html",
+                    "icon" : "/myportfolio/html.png"
+                },
+                {
+                    "name" : "javascript",
+                    "icon" : "/myportfolio/js.png"
+                }
+            ]
+        },
+        {
+            "name" : "Fiftea",
+            "type" : "capstone",
+            "clients" : [
+                "Shan Delima"
+            ],
+            "description" : "",
+            "images" : [
+                "/myportfolio/fiftea/0.png"
+            ],
+            "stacks" : [
+                {
+                    "name" : "laravel",
+                    "icon" : "/myportfolio/laravel.png"
+                },
+                {
+                    "name" : "tailwindcss",
+                    "icon" : "/myportfolio/Tailwind.png"
+                },
+                {
+                    "name" : "html",
+                    "icon" : "/myportfolio/html.png"
+                },
+                {
+                    "name" : "javascript",
+                    "icon" : "/myportfolio/js.png"
+                }
+            ]
+        },
+        {
+            "name" : "Manuela Home HOA",
+            "type" : "capstone",
+            "clients" : [
+                "David Rondina",
+                "Jonas Jalapa",
+                "Cj Damian",
+                "Kim Castro"
+            ],
+            "description" : "",
+            "images" : [
+                "/myportfolio/manuela/0.png"
+            ],
+            "stacks" : [
+                {
+                    "name" : "laravel",
+                    "icon" : "/myportfolio/laravel.png"
+                },
+                {
+                    "name" : "tailwindcss",
+                    "icon" : "/myportfolio/Tailwind.png"
+                },
+                {
+                    "name" : "html",
+                    "icon" : "/myportfolio/html.png"
+                },
+                {
+                    "name" : "javascript",
+                    "icon" : "/myportfolio/js.png"
+                }
+            ]
+        },
+        {
+            "name" : "Doc Aid Appointment System",
+            "type" : "capstone",
+            "clients" : [
+                "Stephen Bacolor",
+                "Mico Salvador"
+            ],
+            "description" : "",
+            "images" : [
+                "/myportfolio/doc-aid/0.png"
+            ],
+            "stacks" : [
+                {
+                    "name" : "laravel",
+                    "icon" : "/myportfolio/laravel.png"
+                },
+                {
+                    "name" : "tailwindcss",
+                    "icon" : "/myportfolio/Tailwind.png"
+                },
+                {
+                    "name" : "html",
+                    "icon" : "/myportfolio/html.png"
+                },
+                {
+                    "name" : "javascript",
+                    "icon" : "/myportfolio/js.png"
+                }
+            ]
+        },
+        {
+            "name" : "Cavite State University Event Scheduling",
+            "type" : "capstone",
+            "clients" : [
+                "Shane Basinag",
+                "Steve Gayamo"
+               
+            ],
+            "description" : "",
+            "images" : [
+                "/myportfolio/csvu-scheduling/0.png"
+            ],
+            "stacks" : [
+                {
+                    "name" : "laravel",
+                    "icon" : "/myportfolio/laravel.png"
+                },
+                {
+                    "name" : "tailwindcss",
+                    "icon" : "/myportfolio/Tailwind.png"
+                },
+                {
+                    "name" : "html",
+                    "icon" : "/myportfolio/html.png"
+                },
+                {
+                    "name" : "javascript",
+                    "icon" : "/myportfolio/js.png"
+                }
+            ]
+        },
+        {
+            "name" : "P-Connect (Reddit clone)",
+            "type" : "capstone",
+            "clients" : [
+                
+            ],
+            "description" : "",
+            "images" : [
+                "/myportfolio/p-connect/0.png"
+            ],
+            "stacks" : [
+                {
+                    "name" : "python",
+                    "icon" : "/myportfolio/python.png"
+                },
+                {
+                    "name" : "tailwindcss",
+                    "icon" : "/myportfolio/Tailwind.png"
+                },
+                {
+                    "name" : "html",
+                    "icon" : "/myportfolio/html.png"
+                },
+                {
+                    "name" : "javascript",
+                    "icon" : "/myportfolio/js.png"
+                },
+                {
+                    "name" : "django",
+                    "icon" : "/myportfolio/django.png"
+                }
+            ]
+        }
+    ]
+}

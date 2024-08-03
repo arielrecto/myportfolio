@@ -1,0 +1,52 @@
+{
+    "skills" : [
+        {
+            "name" : "HTML",
+            "image_url" : "/myportfolio/html.png"
+        },
+        {
+            "name" : "CSS",
+            "image_url" : "/myportfolio/css-3.png"
+        },
+        {
+            "name" : "Javascript",
+            "image_url" : "/myportfolio/js.png"
+        },
+        {
+            "name" : "Git Control",
+            "image_url" : "/myportfolio/git.png"
+        },
+        {
+            "name" : "Laravel",
+            "image_url" : "/myportfolio/laravel.png"
+        },
+        {
+            "name" : "PHP",
+            "image_url" : "/myportfolio/php.png"
+        },
+        {
+            "name" : "Tailwind CSS",
+            "image_url" : "/myportfolio/Tailwind.png"
+        },
+        {
+            "name" : "Vue",
+            "image_url" : "/myportfolio/vue.png"
+        },
+        {
+            "name" : "React Js",
+            "image_url" : "/myportfolio/react.png"
+        },
+        {
+            "name" : "React Native",
+            "image_url" : "/myportfolio/react.png"
+        },
+        {
+            "name" : "Python",
+            "image_url" : "/myportfolio/python.png"
+        },
+        {
+            "name" : "Django",
+            "image_url" : "/myportfolio/django.png"
+        }
+    ]
+}
