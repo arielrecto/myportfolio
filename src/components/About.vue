@@ -1,64 +1,46 @@
 <script setup>
-import { aboutMe } from '@/data/about.json';
-
-
-
+import Icon from '@/components/Icon.vue'
+import { aboutMe } from '@/data/about.json'
+import { services } from '@/data/header.json'
 </script>
 
 <template>
-    <div class="min-h-screen max-w-screen flex items-center  justify-center" id="about">
-        <div class="w-full lg:w-5/6 h-auto flex flex-col space-y-2">
-            <h1 class="text-m-accent font-mono text-2xl lg:text-5xl py-10" v-motion-slide-visible-right :delay="100">
-                About Me</h1>
-            <div class="flex flex-col lg:flex-row lg:justify-between w-full">
-                <div class="flex flex-col items-center space-y-5 w-full lg:w-1/3 justify-center p-2">
-                    <img :src="aboutMe.image"  v-motion-slide-visible-right :delay="150" alt="" srcset=""
-                        class="w-64 aspect-square rounded-full object-cover object-top">
-                    <p class="text-center text-sm text-m-neutral space-y-2"  v-motion-slide-visible-right :delay="200">{{ aboutMe.description }}</p>
-                    <h1  v-motion-slide-visible-right :delay="250"
-                        class="text-2xl font-semibold font-mono tracking-widest text-m-neutral py-5 border-b-2 border-m-accent capitalize">
-                        {{ aboutMe.name }}
-                    </h1>
-                    <p class="text-xs text-m-accent capitalize"  v-motion-slide-visible-right :delay="300">{{ aboutMe.role }}</p>
-                </div> 
+    <section id="about" class="section">
+        <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+            <div v-reveal>
+                <p class="eyebrow">About</p>
+                <h2 class="section-title">Engineering systems that run real businesses.</h2>
+            </div>
+            <div v-reveal :delay="100" class="space-y-8">
+                <p class="text-lg leading-relaxed text-muted">{{ aboutMe.description }}</p>
 
-
-
-                <div class="lg:w-5/6 h-auto flex flex-col gap-2 w-full p-5 lg:p-0"  v-motion-slide-visible-right :delay="350">
-                    <h1 class="text-m-neutral text-2xl lg:text-4xl font-bold tracking-widest text-end py-10">Education
-                        Background</h1>
-                    <ul class="flex flex-col text-m-accent space-y-10">
-                        <template v-for="education, index in aboutMe.education" :key="index">
-                            <li>
-                                <div class="text-m-neutral"  v-motion-slide-visible-right :delay="400 + (50 * (index + 1))">
-                                    <h1 class="text-lg font-bold text-m-accent text-end">{{ education.course }}</h1>
-                                    <p class="font-thin text-xs lg:text-sm text-end">
-                                        {{ education.school }}
-
-                                        {{ education.yearGraduated }}
-                                    </p>
-                                </div>
-                            </li>
-                        </template>
+                <div>
+                    <h3 class="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-content">
+                        <Icon name="graduation" class="h-4 w-4 text-accent" /> Education
+                    </h3>
+                    <ul class="mt-4 space-y-3">
+                        <li v-for="education in aboutMe.education" :key="education.course"
+                            class="flex flex-col justify-between gap-1 border-l-2 border-line pl-4 sm:flex-row sm:items-baseline">
+                            <div>
+                                <p class="font-medium text-content">{{ education.course }}</p>
+                                <p class="text-sm text-muted">{{ education.school }}</p>
+                            </div>
+                            <span class="shrink-0 font-mono text-xs text-muted">{{ education.yearGraduated }}</span>
+                        </li>
                     </ul>
-                    <h1 class="text-m-neutral text-2xl lg:text-4xl font-bold tracking-widest text-end py-10"  v-motion-slide-visible-right :delay="350">Experience</h1>
-                    <ul class="flex flex-col text-m-accent space-y-10">
-                        <template v-for="experience, index in aboutMe.experiences" :key="index">
-                            <li>
-                                <div class="text-m-neutral" v-motion-slide-visible-right :delay="400 + (50 * (index + 1))">
-                                    <h1 class="text-lg font-bold text-m-accent text-end">{{ experience.name }}</h1>
-                                    <p class="font-thin text-xs lg:text-sm text-end">
-                                        {{ experience.company }}
-
-                                        {{ experience.year }}
-                                    </p>
-                                </div>
-                            </li>
-                        </template>
-                    </ul>
-                </div> 
-
+                </div>
             </div>
         </div>
-    </div>
+
+        <div class="mt-16 grid gap-5 md:grid-cols-3">
+            <article v-for="(service, index) in services" :key="service.name" v-reveal :delay="index * 100"
+                class="card p-6 transition-colors hover:border-accent/50">
+                <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                    <Icon :name="service.icon" class="h-5 w-5" />
+                </span>
+                <h3 class="mt-5 text-lg font-semibold text-content">{{ service.name }}</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted">{{ service.description }}</p>
+            </article>
+        </div>
+    </section>
 </template>

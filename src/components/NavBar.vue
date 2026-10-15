@@ -1,68 +1,53 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+import Icon from '@/components/Icon.vue'
+import personal from '@/data/personal.json'
+import logo from '@/assets/logo-mark.png'
 
+const links = [
+    { label: 'About', href: '#about' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Projects', href: '#projects' },
+]
 
+const isOpen = ref(false)
+const isScrolled = ref(false)
+const onScroll = () => { isScrolled.value = window.scrollY > 8 }
 
-const isShow = ref(false)
-
+onMounted(() => { onScroll(); window.addEventListener('scroll', onScroll, { passive: true }) })
+onUnmounted(() => window.removeEventListener('scroll', onScroll))
 </script>
 
-
 <template>
-    <nav class=" w-full lg:flex justify-center fixed top-0 bg-gradient-to-r from-m-primary to-m-secondary z-20 hidden">
-        <div class="w-5/6 flex items-center justify-between py-2">
-            <div class="flex items-center space-x-5">
-                <img src="@/assets/logo.ico" alt="" srcset="" class="w-10 aspect-square rounded-full">
-                <h1 class="text-2xl font-semibold font-mono text-m-accent capitalize">Ariel recto</h1>
-            </div>
-            <div class="flex items-center space-x-5 text-m-neutral">
-                <a href="#home" class="font-mono">Home</a>
-                <a href="#about" class="font-mono">About Me</a>
-                <a href="#skills" class="font-mono">Skills</a>
-                <a href="#projects" class="font-mono">Projects</a>
-            </div>
-            <a href="#contact"
-                class="px-4 py-2 rounded-tl-lg rounded-br-lg bg-m-accent text-m-neutral font-mono font-thin">
-                Contact Me
+    <header
+        :class="['fixed inset-x-0 top-0 z-30 transition-colors duration-300',
+            isScrolled || isOpen ? 'bg-ink/85 backdrop-blur-md border-b border-line' : 'border-b border-transparent']">
+        <nav class="mx-auto flex h-16 max-w-page items-center justify-between px-5 sm:px-8">
+            <a href="#home" class="flex items-center gap-3">
+                <img :src="logo" alt="" class="h-9 w-9" />
+                <span class="font-semibold tracking-tight text-content">{{ personal.shortName }}</span>
             </a>
-        </div>
-    </nav>
 
-    <button
-        class="fixed left-5 lg:hidden bg-m-neutral p-2 flex items-center justify-center z-10 top-10 w-12 aspect-square rounded-full text-m-accent"
-        @click="isShow = true">
-        <img src="/menu.gif" alt="" srcset="">
-    </button>
-
-    <Transition v-show="isShow" enter-active-class="transition-all duration-500 ease-out"
-        enter-from-class="opacity-0 transform -translate-y-10" enter-to-class="opacity-100 transform translate-y-0"
-        leave-active-class="transition-all duration-500 ease-in" leave-from-class="opacity-100 transform translate-y-0"
-        leave-to-class="opacity-0 transform -translate-y-10" :duration="{ enter: 500, leave: 500 }">
-        <nav
-            class="w-full  lg:hidden flex-col items-center fixed  top-0 bg-gradient-to-t from-m-primary to-m-accent z-20">
-            <div class="w-5/6 flex flex-col justify-between items-center py-2 space-y-10">
-                <div v-motion-slide-visible-right :delay="100" class="flex items-center flex-col space-y-2">
-                    <img @click="isShow = false" src="@/assets/logo.ico" alt="" srcset=""
-                        class="w-16 aspect-square rounded-full">
-                    <h1 class="text-2xl font-bold font-mono text-m-primary capitalize">Ariel recto</h1>
-                </div>
-                <div class="flex flex-col items-center space-y-2 text-m-neutral ">
-                    <a v-motion-slide-visible-right :delay="100" @click="isShow = false" href="#home"
-                        class="font-mono">Home</a>
-                    <a v-motion-slide-visible-right :delay="200" @click="isShow = false" href="#about"
-                        class="font-mono">About Me</a>
-                    <a v-motion-slide-visible-right :delay="300" @click="isShow = false" href="#skills"
-                        class="font-mono">Skills</a>
-                    <a v-motion-slide-visible-right :delay="400" @click="isShow = false" href="#projects"
-                        class="font-mono">Projects</a>
-                </div>
-                <a v-motion-slide-visible-right :delay="500" @click="isShow = false" href="#contact"
-                    class="px-4 py-2 rounded-tl-lg rounded-br-lg bg-m-accent text-m-neutral font-mono font-thin">
-                    Contact Me
-                </a>
+            <div class="hidden items-center gap-8 md:flex">
+                <a v-for="link in links" :key="link.href" :href="link.href"
+                    class="text-sm text-muted transition-colors hover:text-content">{{ link.label }}</a>
+                <a href="#contact" class="btn-primary !px-4 !py-2">Contact</a>
             </div>
+
+            <button class="rounded-lg p-2 text-content md:hidden" :aria-expanded="isOpen" aria-label="Toggle menu"
+                @click="isOpen = !isOpen">
+                <Icon :name="isOpen ? 'close' : 'menu'" class="h-6 w-6" />
+            </button>
         </nav>
-    </Transition>
 
-
+        <Transition enter-active-class="transition duration-200 ease-out" enter-from-class="opacity-0 -translate-y-2"
+            leave-active-class="transition duration-150 ease-in" leave-to-class="opacity-0 -translate-y-2">
+            <div v-if="isOpen" class="border-t border-line px-5 pb-6 pt-2 md:hidden">
+                <a v-for="link in links" :key="link.href" :href="link.href" @click="isOpen = false"
+                    class="block border-b border-line py-3 text-content">{{ link.label }}</a>
+                <a href="#contact" @click="isOpen = false" class="btn-primary mt-5 w-full">Contact</a>
+            </div>
+        </Transition>
+    </header>
 </template>

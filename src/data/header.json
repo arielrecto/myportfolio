@@ -1,36 +1,28 @@
 {
-    "dataTwo" : [
-        {
-            "name" : "projects",
-            "total" : "4",
-            "sticker" : "/myportfolio/project.gif"
-        },
-        {
-            "name" : "clients",
-            "total" : "4",
-            "sticker" : "/myportfolio/happy.gif"
-        },
-        {
-            "name" : "support",
-            "total" : "24/7",
-            "sticker" : "/myportfolio/support.gif"
-        }
+    "hero" : {
+        "intro" : "I lead the full software development lifecycle — from requirements analysis and system design to CI/CD deployment and maintenance — building enterprise systems with Laravel, Vue, React, and Python, and delivering custom Odoo ERP solutions and training for clients."
+    },
+    "stats" : [
+        { "value" : "2+", "label" : "Years of experience" },
+        { "value" : "3", "label" : "Companies" },
+        { "value" : "6", "label" : "Enterprise systems built" },
+        { "value" : "36", "label" : "Public GitHub repositories" }
     ],
-    "dataThree" : [
+    "services" : [
         {
-            "name" : "Android Development",
-            "sticker" : "/myportfolio/android.gif",
-            "description" : "I am utilizing React Native to create mobile applications, and Laravel for the backend. Token-based authentication is being handled by Sanctum, along with additional libraries, to create a functional and practical solution that meets the needs of the customer."
+            "name" : "Full-Stack Engineering",
+            "icon" : "code",
+            "description" : "Enterprise web applications built end to end with PHP (Laravel), Vue.js, React.js, Inertia.js, and TypeScript on MySQL and PostgreSQL — from REST APIs to audit trails, dynamic email engines, telephony/SMS/email integrations, and SSO."
         },
         {
-            "name" : "Web Development",
-            "sticker" : "/myportfolio/coding.gif",
-            "description" : "Depending on the needs of the customer, I can use a variety of frameworks in different programming languages when developing websites, however for quick development, I typically utilize the Laravel framework. I've worked with asp.net and django as full-stack web frameworks; for the front end, I utilized vue js and react js."
+            "name" : "Odoo & ERP Consulting",
+            "icon" : "layers",
+            "description" : "Custom Odoo modules in Python and XML — Philippine Payroll, POS workflows, e-commerce restrictions, Appraisal, and HRIS — plus demos, workflow mapping, UAT, and corporate training on P2P, O2C, Inventory, and Accounting."
         },
         {
-            "name" : "Project management",
-            "sticker" : "/myportfolio/management.gif",
-            "description" : "I am able to oversee a project, communicate with the client about what is ideal for their project, and then manage my team to complete tasks by the deadline and complete the project to the best of the client's specifications."
+            "name" : "DevOps & Architecture",
+            "icon" : "server",
+            "description" : "System architecture and delivery ownership: CI/CD pipelines, automated deployment strategy, server management, database performance, and Git-based workflows that keep production healthy."
         }
     ]
 }

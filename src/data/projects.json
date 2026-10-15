@@ -1,7 +1,90 @@
 {
     "projects" : [
         {
-            "name" : "overshot - my capstone",
+            "name" : "Dynamic Email & Audit Logger Module",
+            "type" : "professional",
+            "company" : "Dealer Lion",
+            "clients" : [],
+            "description" : "Granular audit tracker and user-customizable HTML email builder integrated into an enterprise dealership ecosystem.",
+            "images" : [],
+            "repos" : [],
+            "stacks" : [
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "php", "icon" : "/myportfolio/php.png" },
+                { "name" : "mysql", "icon" : "" }
+            ]
+        },
+        {
+            "name" : "Philippineized Odoo Payroll & HR Suite",
+            "type" : "professional",
+            "company" : "Something Somewhere Consulting OPC",
+            "clients" : [],
+            "description" : "Custom Odoo ERP module incorporating Philippine tax computations, attendance tracking, leave management, overtime requests, and expense approvals.",
+            "images" : [],
+            "repos" : ["odoo-payroll-19-0-1-0-0"],
+            "stacks" : [
+                { "name" : "odoo", "icon" : "" },
+                { "name" : "python", "icon" : "/myportfolio/python.png" },
+                { "name" : "xml", "icon" : "" },
+                { "name" : "postgresql", "icon" : "" }
+            ]
+        },
+        {
+            "name" : "Integrated HRIS & Payroll System",
+            "type" : "professional",
+            "company" : "Innovato IT Solutions",
+            "clients" : [],
+            "description" : "Comprehensive Daily Time Record (DTR) and payroll automation tool with biometric integration, automated leave management, and dynamic salary computation based on Philippine tax laws.",
+            "images" : [],
+            "repos" : [],
+            "stacks" : [
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "react js", "icon" : "/myportfolio/react.png" },
+                { "name" : "ci/cd", "icon" : "" }
+            ]
+        },
+        {
+            "name" : "Odoo Shopee & TikTok Shop Integration",
+            "type" : "professional",
+            "company" : "Innovato IT Solutions",
+            "clients" : [],
+            "description" : "Integrated Odoo ERP with the Shopee and TikTok Shop APIs, automating order synchronization and inventory management across marketplaces.",
+            "images" : [],
+            "repos" : [],
+            "stacks" : [
+                { "name" : "odoo", "icon" : "" },
+                { "name" : "python", "icon" : "/myportfolio/python.png" },
+                { "name" : "rest apis", "icon" : "" }
+            ]
+        },
+        {
+            "name" : "Corporate Financial Management System",
+            "type" : "professional",
+            "company" : "Innovato IT Solutions",
+            "clients" : [],
+            "description" : "Secure platform for tracking company revenue, operational expenses, and budget allocation with real-time financial visibility.",
+            "images" : [],
+            "repos" : [],
+            "stacks" : [
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "vue js", "icon" : "/myportfolio/vue.png" }
+            ]
+        },
+        {
+            "name" : "Internal Project Management Tool",
+            "type" : "professional",
+            "company" : "Innovato IT Solutions",
+            "clients" : [],
+            "description" : "Collaborative workspace for task tracking, resource allocation, and timeline monitoring to streamline internal development workflows.",
+            "images" : [],
+            "repos" : [],
+            "stacks" : [
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "inertia.js", "icon" : "" }
+            ]
+        },
+        {
+            "name" : "Overshot",
             "type" : "capstone",
             "clients" : [
                 "ariel recto",
@@ -12,27 +95,13 @@
             "images" : [
                 "/myportfolio/overshot/0.png"
             ],
+            "repos" : ["Overshot-backend", "overshotfrontend"],
             "stacks" : [
-                {
-                    "name" : "laravel",
-                    "icon" : "/myportfolio/laravel.png"
-                },
-                {
-                    "name" : "vue js",
-                    "icon" : "/myportfolio/vue.png"
-                },
-                {
-                    "name" : "tailwindcss",
-                    "icon" : "/myportfolio/Tailwind.png"
-                },
-                {
-                    "name" : "html",
-                    "icon" : "/myportfolio/html.png"
-                },
-                {
-                    "name" : "javascript",
-                    "icon" : "/myportfolio/js.png"
-                }
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "vue js", "icon" : "/myportfolio/vue.png" },
+                { "name" : "tailwindcss", "icon" : "/myportfolio/Tailwind.png" },
+                { "name" : "html", "icon" : "/myportfolio/html.png" },
+                { "name" : "javascript", "icon" : "/myportfolio/js.png" }
             ]
         },
         {
@@ -45,23 +114,12 @@
             "images" : [
                 "/myportfolio/fiftea/0.png"
             ],
+            "repos" : ["FIFTEA-8"],
             "stacks" : [
-                {
-                    "name" : "laravel",
-                    "icon" : "/myportfolio/laravel.png"
-                },
-                {
-                    "name" : "tailwindcss",
-                    "icon" : "/myportfolio/Tailwind.png"
-                },
-                {
-                    "name" : "html",
-                    "icon" : "/myportfolio/html.png"
-                },
-                {
-                    "name" : "javascript",
-                    "icon" : "/myportfolio/js.png"
-                }
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "tailwindcss", "icon" : "/myportfolio/Tailwind.png" },
+                { "name" : "html", "icon" : "/myportfolio/html.png" },
+                { "name" : "javascript", "icon" : "/myportfolio/js.png" }
             ]
         },
         {
@@ -77,23 +135,12 @@
             "images" : [
                 "/myportfolio/manuela/0.png"
             ],
+            "repos" : [],
             "stacks" : [
-                {
-                    "name" : "laravel",
-                    "icon" : "/myportfolio/laravel.png"
-                },
-                {
-                    "name" : "tailwindcss",
-                    "icon" : "/myportfolio/Tailwind.png"
-                },
-                {
-                    "name" : "html",
-                    "icon" : "/myportfolio/html.png"
-                },
-                {
-                    "name" : "javascript",
-                    "icon" : "/myportfolio/js.png"
-                }
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "tailwindcss", "icon" : "/myportfolio/Tailwind.png" },
+                { "name" : "html", "icon" : "/myportfolio/html.png" },
+                { "name" : "javascript", "icon" : "/myportfolio/js.png" }
             ]
         },
         {
@@ -103,27 +150,16 @@
                 "Stephen Bacolor",
                 "Mico Salvador"
             ],
-            "description" : "",
+            "description" : "A Laravel Blade-based system for scheduling diagnostic appointments.",
             "images" : [
                 "/myportfolio/doc-aid/0.png"
             ],
+            "repos" : ["Doc-Aid-Diagnostic-Appointment-System"],
             "stacks" : [
-                {
-                    "name" : "laravel",
-                    "icon" : "/myportfolio/laravel.png"
-                },
-                {
-                    "name" : "tailwindcss",
-                    "icon" : "/myportfolio/Tailwind.png"
-                },
-                {
-                    "name" : "html",
-                    "icon" : "/myportfolio/html.png"
-                },
-                {
-                    "name" : "javascript",
-                    "icon" : "/myportfolio/js.png"
-                }
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "tailwindcss", "icon" : "/myportfolio/Tailwind.png" },
+                { "name" : "html", "icon" : "/myportfolio/html.png" },
+                { "name" : "javascript", "icon" : "/myportfolio/js.png" }
             ]
         },
         {
@@ -132,63 +168,131 @@
             "clients" : [
                 "Shane Basinag",
                 "Steve Gayamo"
-               
             ],
-            "description" : "",
+            "description" : "Event scheduling web system with a companion Framework7 + Vue mobile app.",
             "images" : [
                 "/myportfolio/csvu-scheduling/0.png"
             ],
+            "repos" : ["Cvsu-Event-Scheduling", "Cvsu-Event-Scheduling-mobile"],
             "stacks" : [
-                {
-                    "name" : "laravel",
-                    "icon" : "/myportfolio/laravel.png"
-                },
-                {
-                    "name" : "tailwindcss",
-                    "icon" : "/myportfolio/Tailwind.png"
-                },
-                {
-                    "name" : "html",
-                    "icon" : "/myportfolio/html.png"
-                },
-                {
-                    "name" : "javascript",
-                    "icon" : "/myportfolio/js.png"
-                }
+                { "name" : "laravel", "icon" : "/myportfolio/laravel.png" },
+                { "name" : "vue js", "icon" : "/myportfolio/vue.png" },
+                { "name" : "tailwindcss", "icon" : "/myportfolio/Tailwind.png" },
+                { "name" : "javascript", "icon" : "/myportfolio/js.png" }
             ]
         },
         {
             "name" : "P-Connect (Reddit clone)",
             "type" : "capstone",
-            "clients" : [
-                
-            ],
+            "clients" : [],
             "description" : "",
             "images" : [
                 "/myportfolio/p-connect/0.png"
             ],
+            "repos" : ["P-Connect"],
             "stacks" : [
-                {
-                    "name" : "python",
-                    "icon" : "/myportfolio/python.png"
-                },
-                {
-                    "name" : "tailwindcss",
-                    "icon" : "/myportfolio/Tailwind.png"
-                },
-                {
-                    "name" : "html",
-                    "icon" : "/myportfolio/html.png"
-                },
-                {
-                    "name" : "javascript",
-                    "icon" : "/myportfolio/js.png"
-                },
-                {
-                    "name" : "django",
-                    "icon" : "/myportfolio/django.png"
-                }
+                { "name" : "python", "icon" : "/myportfolio/python.png" },
+                { "name" : "django", "icon" : "/myportfolio/django.png" },
+                { "name" : "tailwindcss", "icon" : "/myportfolio/Tailwind.png" },
+                { "name" : "html", "icon" : "/myportfolio/html.png" },
+                { "name" : "javascript", "icon" : "/myportfolio/js.png" }
             ]
+        },
+        {
+            "name" : "THEOS-MIS",
+            "type" : "repository",
+            "year" : "2026",
+            "description" : "School management system for students, teachers, and classrooms — enrollment, class scheduling, task tracking, role-based access control, and automated reports.",
+            "repos" : ["THEOS-MIS"],
+            "stacks" : [{ "name" : "laravel", "icon" : "" }, { "name" : "blade", "icon" : "" }, { "name" : "mysql", "icon" : "" }]
+        },
+        {
+            "name" : "Anaia's Motorcycle Rental System",
+            "type" : "repository",
+            "year" : "2026",
+            "description" : "Motorcycle rental platform with a filterable catalog, real-time availability, payment integration, rental history, and an admin fleet dashboard.",
+            "repos" : ["Rental-System"],
+            "stacks" : [{ "name" : "laravel", "icon" : "" }, { "name" : "vue", "icon" : "" }, { "name" : "mysql", "icon" : "" }]
+        },
+        {
+            "name" : "Odoo 19 Real Estate Module",
+            "type" : "repository",
+            "year" : "2026",
+            "description" : "Custom real estate module for Odoo 19.",
+            "repos" : ["real_estate_odoo_19_0_1_0_0_0"],
+            "stacks" : [{ "name" : "odoo", "icon" : "" }, { "name" : "python", "icon" : "" }]
+        },
+        {
+            "name" : "ServeEase",
+            "type" : "repository",
+            "year" : "2025",
+            "description" : "",
+            "repos" : ["ServeEase-WebApp"],
+            "stacks" : [{ "name" : "laravel", "icon" : "" }, { "name" : "vue", "icon" : "" }]
+        },
+        {
+            "name" : "CollabLearn v2",
+            "type" : "repository",
+            "year" : "2025",
+            "description" : "",
+            "repos" : ["Collablearn-v2"],
+            "stacks" : [{ "name" : "laravel", "icon" : "" }, { "name" : "php", "icon" : "" }]
+        },
+        {
+            "name" : "Expense Manager",
+            "type" : "repository",
+            "year" : "2024",
+            "description" : "Laravel-based financial management system that tracks expenses and provides real-time analytics.",
+            "repos" : ["Expense-Manager-Exam"],
+            "stacks" : [{ "name" : "laravel", "icon" : "" }, { "name" : "php", "icon" : "" }]
+        },
+        {
+            "name" : "BikeHub",
+            "type" : "repository",
+            "year" : "2024",
+            "description" : "",
+            "repos" : ["bikehub-frontend", "bikehub-backend"],
+            "stacks" : [{ "name" : "svelte", "icon" : "" }, { "name" : "laravel", "icon" : "" }]
+        },
+        {
+            "name" : "P-Finance",
+            "type" : "repository",
+            "year" : "2024",
+            "description" : "",
+            "repos" : ["P-Finance-backend"],
+            "stacks" : [{ "name" : "laravel", "icon" : "" }, { "name" : "php", "icon" : "" }]
+        },
+        {
+            "name" : "SouthEast",
+            "type" : "repository",
+            "year" : "2024",
+            "description" : "",
+            "repos" : ["SouthEast", "south-east-app"],
+            "stacks" : [{ "name" : "laravel", "icon" : "" }, { "name" : "javascript", "icon" : "" }]
+        },
+        {
+            "name" : "ITCS Department App",
+            "type" : "repository",
+            "year" : "2024",
+            "description" : "",
+            "repos" : ["ITCS-department-app"],
+            "stacks" : [{ "name" : "javascript", "icon" : "" }]
+        },
+        {
+            "name" : "Golden Annex Apartment System",
+            "type" : "repository",
+            "year" : "2023",
+            "description" : "",
+            "repos" : ["Golden-Annex-Apartment-System"],
+            "stacks" : [{ "name" : "laravel", "icon" : "" }, { "name" : "blade", "icon" : "" }]
+        },
+        {
+            "name" : "Gamobear Appointment System",
+            "type" : "repository",
+            "year" : "2023",
+            "description" : "",
+            "repos" : ["Gamobear-Appointment-System"],
+            "stacks" : [{ "name" : "php", "icon" : "" }]
         }
     ]
 }

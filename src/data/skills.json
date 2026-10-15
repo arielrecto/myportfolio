@@ -1,52 +1,49 @@
 {
     "skills" : [
+        { "name" : "PHP", "image_url" : "/myportfolio/php.png" },
+        { "name" : "Laravel", "image_url" : "/myportfolio/laravel.png" },
+        { "name" : "Vue", "image_url" : "/myportfolio/vue.png" },
+        { "name" : "React Js", "image_url" : "/myportfolio/react.png" },
+        { "name" : "Inertia.js", "image_url" : "/myportfolio/inertia.png" },
+        { "name" : "TypeScript", "image_url" : "/myportfolio/typescript.png" },
+        { "name" : "Alpine.js", "image_url" : "/myportfolio/tech/alpinejs.png" },
+        { "name" : "Node.js", "image_url" : "/myportfolio/Node.js_logo.svg" },
+        { "name" : ".NET 8", "image_url" : "/myportfolio/tech/dotnet8.png" },
+        { "name" : "Svelte", "image_url" : "/myportfolio/svelte.png" },
+        { "name" : "Javascript", "image_url" : "/myportfolio/js.png" },
+        { "name" : "Python", "image_url" : "/myportfolio/python.png" },
+        { "name" : "Odoo", "image_url" : "/myportfolio/odoo-logo.png" },
+        { "name" : "MySQL", "image_url" : "/myportfolio/mysql.jpg" },
+        { "name" : "PostgreSQL", "image_url" : "/myportfolio/Postgresql_elephant.svg" },
+        { "name" : "Git Control", "image_url" : "/myportfolio/git.png" },
+        { "name" : "Docker", "image_url" : "/myportfolio/tech/docker.png" },
+        { "name" : "Azure DevOps", "image_url" : "/myportfolio/azure.png" },
+        { "name" : "Tailwind CSS", "image_url" : "/myportfolio/Tailwind.png" },
+        { "name" : "HTML", "image_url" : "/myportfolio/html.png" },
+        { "name" : "CSS", "image_url" : "/myportfolio/css-3.png" },
+        { "name" : "Django", "image_url" : "/myportfolio/django.png" },
+        { "name" : "React Native", "image_url" : "/myportfolio/react.png" }
+    ],
+    "competencies" : [
         {
-            "name" : "HTML",
-            "image_url" : "/myportfolio/html.png"
+            "name" : "Full-Stack Engineering",
+            "items" : ["PHP (Laravel)", "Vue.js", "React.js", "Inertia.js", "TypeScript", "REST APIs", "MySQL", "PostgreSQL"]
         },
         {
-            "name" : "CSS",
-            "image_url" : "/myportfolio/css-3.png"
+            "name" : "Odoo & ERP Customization",
+            "items" : ["Custom Module Development", "Philippine Payroll", "POS Workflows", "E-Commerce Restrictions", "Appraisal", "HRIS", "Python", "XML"]
         },
         {
-            "name" : "Javascript",
-            "image_url" : "/myportfolio/js.png"
+            "name" : "System Architecture & Features",
+            "items" : ["Dynamic Email Engines", "Audit Trail / Logging Modules", "Telephony / SMS / Email Integrations", "Marketplace API Integrations (Shopee, TikTok Shop)", "Single Sign-On (SSO)"]
         },
         {
-            "name" : "Git Control",
-            "image_url" : "/myportfolio/git.png"
+            "name" : "DevOps & Infrastructure",
+            "items" : ["CI/CD Pipeline Implementation", "Automated Deployment Strategy", "Server Management", "Docker", "Azure DevOps", "Git Version Control"]
         },
         {
-            "name" : "Laravel",
-            "image_url" : "/myportfolio/laravel.png"
-        },
-        {
-            "name" : "PHP",
-            "image_url" : "/myportfolio/php.png"
-        },
-        {
-            "name" : "Tailwind CSS",
-            "image_url" : "/myportfolio/Tailwind.png"
-        },
-        {
-            "name" : "Vue",
-            "image_url" : "/myportfolio/vue.png"
-        },
-        {
-            "name" : "React Js",
-            "image_url" : "/myportfolio/react.png"
-        },
-        {
-            "name" : "React Native",
-            "image_url" : "/myportfolio/react.png"
-        },
-        {
-            "name" : "Python",
-            "image_url" : "/myportfolio/python.png"
-        },
-        {
-            "name" : "Django",
-            "image_url" : "/myportfolio/django.png"
+            "name" : "Business Process & Consulting",
+            "items" : ["Procure-to-Pay (P2P)", "Order-to-Cash (O2C)", "Inventory & Accounting Workflows", "User Acceptance Testing (UAT)", "Corporate Training"]
         }
     ]
 }

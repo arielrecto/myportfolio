@@ -1,13 +1,10 @@
 {
     "aboutMe" : {
-        "name" : "ariel recto",
-        "role" : "full-stack web developer",
-        "description" : "I graduated with a Bachelor of Science in Information Technology (BSIT) in 2024. I possess skills in programming across various languages and frameworks, with a strong focus on web development and mobile development. My experience includes working with technologies like Dotnet 8, React.js, and Laravel, as well as a solid foundation in networking and database management. I am passionate about leveraging technology to solve complex problems and am dedicated to continuously improving my skills in the ever-evolving IT landscape.",
-        "image" : "/myportfolio/img.jpg",
+        "description" : "Full-Stack Software Engineer & Technical Consultant with comprehensive experience in end-to-end software architecture, DevOps automation, and ERP solutions. Proven ability to lead the full software development lifecycle (SDLC) — from requirements analysis and system design to CI/CD deployment and maintenance. I have engineered critical enterprise systems (HRIS, Finance, Project Management, Dealership Platforms) using Laravel, Vue, React, and Python, while driving client success through custom Odoo ERP development, module customization, and corporate training.",
         "education" : [
             {
-                "course" : "Bachelor Science of Information Technology",
-                "school" : "Cavite State University - Bacoor City Campus",
+                "course" : "Bachelor of Science in Information Technology",
+                "school" : "Cavite State University - Bacoor Campus",
                 "yearGraduated" : "2020 - 2024"
             },
             {
@@ -18,9 +15,43 @@
         ],
         "experiences" : [
             {
-                "name" : "ON-THE-JOB Training",
-                "company" : "KORPIL SHIPMANAGEMENT AND MANNING CORPORATION",
-                "year" : "2024"
+                "name" : "Software Engineer",
+                "company" : "Dealer Lion",
+                "year" : "May 2026 - Present",
+                "highlights" : [
+                    "Audit Trail Architecture: designed and built a Laravel audit trail module tracking system-wide changes, critical transaction logs, and user activity across an all-in-one dealership management platform (desk deals, trade-ins, customer conversations, calls, SMS, and email integrations).",
+                    "Dynamic Template Engine: developed an in-app dynamic email builder that lets non-technical users create, modify, and manage email templates without code changes.",
+                    "System Maintenance & Optimization: maintained platform integrity, resolved critical bugs, and regularly shipped features supporting high-volume automotive sales operations."
+                ]
+            },
+            {
+                "name" : "Technical Consultant",
+                "company" : "Something Somewhere Consulting OPC",
+                "year" : "Feb 2026 - Jun 2026",
+                "highlights" : [
+                    "Odoo Philippine Payroll Localization: customized Odoo's Payroll module to comply with Philippine labor standards and tax regulations, integrating Employee records, Time Off, Attendance, Expense reimbursements, and Overtime requests.",
+                    "Custom E-Commerce Restrictions: modified the Odoo Website/E-Commerce module to implement location-based purchasing restrictions, limiting orders to local buyers.",
+                    "Point of Sale (POS) Customization: refactored and tailored Odoo POS workflows and logic to fit client-specific retail operations."
+                ]
+            },
+            {
+                "name" : "Software Engineer / Technical Consultant",
+                "company" : "Innovato IT Solutions",
+                "year" : "Nov 2024 - Feb 2026",
+                "highlights" : [
+                    "Software Architecture & DevOps Leadership: architected and developed the company's proprietary enterprise ecosystem of three web applications — HRIS/DTR, Financial Management, and Project Management — and maintained server health and database performance.",
+                    "ERP Consultancy & Client Solutions: served as Lead Technical Consultant for Odoo ERP, running product demos, proof-of-concept presentations, and workflow mapping for prospective clients.",
+                    "Odoo Custom Module Development: engineered custom Odoo modules for client requirements, including Payroll, Appraisal, and core business operations.",
+                    "Odoo End-to-End Training & Delivery: designed and delivered corporate training on Procure-to-Pay (P2P), Order-to-Cash (O2C), Inventory Management, and Odoo Accounting."
+                ]
+            },
+            {
+                "name" : "On-the-Job Training",
+                "company" : "Korpil Shipmanagement and Manning Corporation",
+                "year" : "2024",
+                "highlights" : [
+                    "Management Information System: developed a crew deployment MIS using .NET 8 and React.js, implementing database optimization and security measures."
+                ]
             }
         ]
     }

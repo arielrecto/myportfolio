@@ -1,7 +1,14 @@
 {
-    "first_name" : "ariel",
-    "last_name" : "recto",
-    "middle_name" : "",
-    "photo_url" : "/assets/img.jpg",
-    "description" :  "" 
+    "name" : "Ariel V. Recto",
+    "shortName" : "Ariel Recto",
+    "role" : "Full-Stack Software Engineer & Technical Consultant",
+    "location" : "Las Piñas City, Philippines",
+    "email" : "arielrecto29@gmail.com",
+    "phone" : "09100488568",
+    "resumeUrl" : "",
+    "socials" : [
+        { "name" : "LinkedIn", "icon" : "linkedin", "url" : "https://www.linkedin.com/in/recto-ariel-644782250/" },
+        { "name" : "GitHub", "icon" : "github", "url" : "https://github.com/arielrecto" },
+        { "name" : "Facebook", "icon" : "facebook", "url" : "https://www.facebook.com/profile.php?id=100005579118863" }
+    ]
 }

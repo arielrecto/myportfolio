@@ -1,103 +1,78 @@
 <script setup>
-import { ref } from 'vue'
-import { useMotion } from '@vueuse/motion'
-const showModal = ref(false)
+import Icon from '@/components/Icon.vue'
 import personal from '@/data/personal.json'
-import header from '@/data/header.json'
-const { dataTwo, dataThree } = header;
+import { hero, stats } from '@/data/header.json'
+import { aboutMe } from '@/data/about.json'
+import photo from '@/assets/profile.jpg'
 
-
-console.log(dataTwo)
-
+// The current position is whichever experience is still running.
+const current = aboutMe.experiences.find((e) => /present/i.test(e.year))
 </script>
 
 <template>
-    <div class="min-h-screen  flex justify-center items-center" id="home">
-        <div class="flex flex-col lg:flex-row justify-between gap-2 items-center w-5/6">
-            <div class="">
-                <img src="@/assets/img.jpg" alt="" srcset="" class="w-32 md:w-64 lg:w-96 aspect-square rounded-full object-cover object-top 
-                shadow-xl shadow-m-accent
-                ">
-                <!-- <div class="w-64 aspect-square border-2 border-m-accent rounded-full
-                 absolute z-0 right-10">
+    <section id="home" class="relative overflow-hidden">
+        <!-- soft background glow -->
+        <div aria-hidden="true"
+            class="pointer-events-none absolute -top-40 right-0 h-[32rem] w-[32rem] rounded-full bg-accent/10 blur-3xl" />
 
-                </div> -->
-            </div>
+        <div class="section relative grid items-center gap-12 !pt-32 lg:grid-cols-[1.25fr_1fr] lg:!pt-40">
+            <div v-reveal>
+                <span v-if="current" class="chip !text-content">
+                    <span class="relative flex h-2 w-2">
+                        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+                        <span class="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                    </span>
+                    {{ current.name }} at {{ current.company }}
+                </span>
 
-            <div class="w-full lg:w-1/2 flex flex-col space-y-5">
-                <h1 class="text-sm lg:text-lg font-thin font-mono text-m-accent uppercase">Hi!!</h1>
-                <h1 class="text-m-neutral font-mono font-bold text-2xl lg:text-4xl">I'm <span
-                        class="text-m-accent">FULL-STACK WEB
-                        DEVELOPER AND ANDROID DEVELOPER</span></h1>
-                <p class="text-m-neutral text-xs md:text-sm lg:text-md">As a full-stack web developer, I am totally
-                    committed to fulfilling the needs
-                    of the client and developing a strong connection with them so that they are satisfied with the
-                    results I provide.</p>
+                <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-content sm:text-5xl lg:text-6xl">
+                    {{ personal.name }}
+                </h1>
+                <p class="mt-3 text-lg font-medium text-accent sm:text-xl">{{ personal.role }}</p>
+                <p class="mt-6 max-w-xl leading-relaxed text-muted">{{ hero.intro }}</p>
 
-                <div
-                    class="flex items-center space-x-5 rounded-lg bg-gradient-to-r from-m-accent to-m-secondary w-auto p-2">
-                    <a href="https://www.facebook.com/profile.php?id=100005579118863" target="_blank"
-                        class="grayscale hover:grayscale-0 duration-700 hover:scale-110">
-                        <img src="/facebook.png" alt="" srcset="" class="w-6 aspect-square">
+                <div class="mt-8 flex flex-wrap items-center gap-3">
+                    <a href="#projects" class="btn-primary">
+                        View my work <Icon name="arrow" class="h-4 w-4" />
                     </a>
-                    <a href="https://www.linkedin.com/in/recto-ariel-644782250/" target="_blank"
-                        class="grayscale hover:grayscale-0 duration-700 hover:scale-110">
-                        <img src="/linkedin.png" alt="" srcset="" class="w-6 aspect-square">
+                    <a v-if="personal.resumeUrl" :href="personal.resumeUrl" download class="btn-ghost">
+                        <Icon name="download" class="h-4 w-4" /> Download CV
                     </a>
-                    <a href="https://github.com/arielrecto" target="_blank"
-                        class="grayscale hover:grayscale-0 duration-700 hover:scale-110">
-                        <img src="/github.png" alt="" srcset="" class="w-6 aspect-square">
-                    </a>
-
+                    <a v-else href="#contact" class="btn-ghost">Get in touch</a>
                 </div>
 
-                <!-- <button class="px-4 py-2 rounded-lg bg-m-accent text-m-neutral font-thin" @click="showModal = true">About Me</button>       -->
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="bg-m-accent mex-w-screen h-96 flex justify-center items-center" v-motion-slide-bottom :delay="100">
-        <div class="w-5/6 grid grid-cols-3 grid-flow-row">
-            <template v-for="data, index in dataTwo" :key="index">
-                <div class="flex flex-col gap-2 items-center w-full" >
-                    <img v-motion-slide-bottom :delay="100 * (index + 1)" :src="data.sticker" class=" w-12 lg:w-24 aspect-square" alt="" srcset="">
-                    <h1 v-motion-slide-bottom :delay="150 * (index + 1)"
-                        class="text-m-primary font-mono text-xl lg:text-2xl capitalize flex flex-col space-y-5 items-center">
-                        <span class="text-xl lg:text-5xl font-bold text-m-neutral">{{ data.total }}</span> <span>{{
-        data.name }}</span> </h1>
+                <div class="mt-8 flex items-center gap-2">
+                    <a v-for="social in personal.socials" :key="social.name" :href="social.url" target="_blank"
+                        rel="noopener" :aria-label="social.name"
+                        class="rounded-lg p-2 text-muted transition-colors hover:bg-raised hover:text-accent">
+                        <Icon :name="social.icon" class="h-5 w-5" />
+                    </a>
+                    <span class="mx-2 h-5 w-px bg-line" />
+                    <span class="flex items-center gap-2 text-sm text-muted">
+                        <Icon name="pin" class="h-4 w-4" /> {{ personal.location }}
+                    </span>
                 </div>
-            </template>
+            </div>
 
-        </div>
-    </div> 
-
-
-
-    <div class="min-h-screen max-w-screen flex lg:flex-row lg:justify-center lg:items-center">
-        <div class="lg:w-5/6  w-full flex flex-col gap-2 h-full">
-            <h1 class="text-m-accent font-mono text-2xl lg:text-5xl py-10">What I can Do?</h1>
-
-            <div class="grid lg:grid-cols-3 lg:grid-flow-row gap-2 h-full items-center">
-                <template v-for="data3, index in dataThree" :key="index">
-                    <div
-                        class="flex items-center flex-col space-y-2 lg:rounded-lg lg:border 
-                        lg:border-m-accent w-full h-auto aspect-square justify-center">
-                        <div  v-motion-slide-visible-left :delay="100 * (index + 1)" class="w-16 md:w-32 aspect-square rounded-full bg-m-neutral flex items-center justify-center p-5">
-                            <img :src="data3.sticker" alt="" srcset="">
-                        </div>
-                        <h1  v-motion-slide-visible-left :delay="150 * (index + 1)" class="text-xl lg:text-2xl font-semibold font-mono text-m-accent">
-                            {{ data3.name }}
-                        </h1>
-                        <p  v-motion-slide-visible-left :delay="200 * (index + 1)" class="text-xs md:text-sm lg:text-md p-5 font-thin text-m-neutral text-justify">
-                            {{ data3.description }}
-                        </p>
-                    </div>
-                </template>
-
+            <div v-reveal :delay="150" class="mx-auto w-full max-w-sm lg:max-w-none">
+                <div class="relative">
+                    <div aria-hidden="true"
+                        class="absolute -inset-3 rounded-[2rem] border border-line bg-gradient-to-br from-accent/20 to-transparent" />
+                    <img :src="photo" :alt="`Portrait of ${personal.name}`"
+                        class="relative aspect-[4/5] w-full rounded-3xl object-cover object-top" />
+                </div>
             </div>
         </div>
-    </div>
 
+        <!-- stats -->
+        <div class="mx-auto max-w-page px-5 pb-8 sm:px-8">
+            <dl class="grid grid-cols-2 overflow-hidden rounded-2xl border border-line bg-line gap-px lg:grid-cols-4">
+                <div v-for="(stat, index) in stats" :key="stat.label" v-reveal :delay="index * 80"
+                    class="bg-surface px-6 py-6">
+                    <dt class="text-sm text-muted">{{ stat.label }}</dt>
+                    <dd class="mt-1 text-3xl font-bold tracking-tight text-content">{{ stat.value }}</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
 </template>
