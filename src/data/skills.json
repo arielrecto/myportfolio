@@ -35,7 +35,11 @@
         },
         {
             "name" : "System Architecture & Features",
-            "items" : ["Dynamic Email Engines", "Audit Trail / Logging Modules", "Telephony / SMS / Email Integrations", "Marketplace API Integrations (Shopee, TikTok Shop)", "Single Sign-On (SSO)"]
+            "items" : ["Dynamic Email Engines", "Audit Trail / Logging Modules", "Telephony / SMS / Email Integrations", "Marketplace API Integrations (Shopee, TikTok Shop)"]
+        },
+        {
+            "name" : "Enterprise Solutions",
+            "items" : ["HRIS & Payroll Algorithms", "Financial Management Systems", "Project Management Systems", "Single Sign-On (SSO) Architecture"]
         },
         {
             "name" : "DevOps & Infrastructure",
@@ -43,7 +47,7 @@
         },
         {
             "name" : "Business Process & Consulting",
-            "items" : ["Procure-to-Pay (P2P)", "Order-to-Cash (O2C)", "Inventory & Accounting Workflows", "User Acceptance Testing (UAT)", "Corporate Training"]
+            "items" : ["Business Requirements Analysis", "Client Presentations & PoCs", "Procure-to-Pay (P2P)", "Order-to-Cash (O2C)", "Inventory & Accounting Workflows", "User Acceptance Testing (UAT)", "Corporate Training"]
         }
     ]
 }

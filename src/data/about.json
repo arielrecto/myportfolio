@@ -39,10 +39,11 @@
                 "company" : "Innovato IT Solutions",
                 "year" : "Nov 2024 - Feb 2026",
                 "highlights" : [
-                    "Software Architecture & DevOps Leadership: architected and developed the company's proprietary enterprise ecosystem of three web applications — HRIS/DTR, Financial Management, and Project Management — and maintained server health and database performance.",
-                    "ERP Consultancy & Client Solutions: served as Lead Technical Consultant for Odoo ERP, running product demos, proof-of-concept presentations, and workflow mapping for prospective clients.",
+                    "Software Architecture & DevOps Leadership: architected and developed the company's proprietary enterprise ecosystem of three mission-critical web applications — HRIS/DTR, Financial Management, and Project Management — and maintained server health and database optimization, ensuring high availability and performance for real-time business operations.",
+                    "ERP Consultancy & Client Solutions: served as Lead Technical Consultant for Odoo ERP, bridging technical capabilities and client business goals through product demos and proof-of-concept presentations that directly supported the sales cycle.",
+                    "Business Analysis: executed in-depth business analysis to map client workflows and recommend tailored Odoo configurations.",
                     "Odoo Custom Module Development: engineered custom Odoo modules for client requirements, including Payroll, Appraisal, and core business operations.",
-                    "Odoo End-to-End Training & Delivery: designed and delivered corporate training on Procure-to-Pay (P2P), Order-to-Cash (O2C), Inventory Management, and Odoo Accounting."
+                    "Odoo End-to-End Training & Delivery: designed and delivered corporate training on Procure-to-Pay (P2P), Order-to-Cash (O2C), Inventory Management, and Odoo Accounting, facilitating smooth system adoption and operational efficiency."
                 ]
             },
             {
